@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript for/in loop</title>
+        <style></style>
+        <script>
+                // I can write js code before the clossing of head tag
+        </script>
+    </head>
+
+    <body>
+        <h1 class="Stdtl"></h1>
+        <script>
+            // I can write js code before the clossing of body tag
+            let student1 = {
+                name: "vishnu", // this Value is string Value
+                surname: "jaat", // this Value is string Value
+                address: "pawati", // this Value is string Value
+                contact: 8087876466, // this Value is number
+                friend: ["rakesh", "goutam", "suraj", "Pankaj", "Pushpendra"] // this is Array Value
+            } // {} this Sign  = javascript object
+            //[] this Sign we called = js Array
+            // . sign mean = Member Selection operator 
+            /*
+            {
+                //1 Property:value/ key:Value
+
+                //2 Method
+            }
+            */
+            /*
+            for (key in object) {
+            // code block to be executed
+            }
+            */
+            for (s in student1) {
+                /*
+                objectName.property      // person.age
+        
+        
+                objectName["property"]   // person["age"]
+        
+        
+                objectName[expression]   // x = "age"; person[x]
+        
+                */
+                //document.getElementById("stdtl").innerHTML=student
+                console.log(student1[`${s}`]);
+                console.log(student1[s]);
+                alert(student1[`${s}`]);
+            }
+        </script>
+        <script>
+            //I can write js code before the clossing of body Tag
+            /*
+            Syntax-
+                for (variable of iterable) {
+            // code block to be executed
+            }
+            */
+            let name = "Suryabhansing Sisodiya"; //String is an iterable Object
+
+
+            for (s of name) {
+                console.log(s);
+               // alert(s);
+            }
+        </script>
+        <script>
+            //I can write js code before the clossing of body tag
+            let students = ['Vishnu Jaat'+' '+'Goutam'+' '+'suryabhan'+' '+'pankaj'+' '+'pushpendra'+' '+'rakesh'+' '+'nitesh'+' '+'pradeep']; // [] this sign js we called is an Array
+            for(s of students){
+                console.log(s);
+                document.write(s);
+            }
+        </script>
+    </body>
+
+</html>
